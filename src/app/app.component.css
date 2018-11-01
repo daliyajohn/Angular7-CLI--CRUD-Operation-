@@ -13,6 +13,8 @@
 
 .create-container .mat-card {
   width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .create-container button {

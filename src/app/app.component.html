@@ -3,15 +3,13 @@
     <div class="create-container">
       <h4>Create</h4>
       <mat-card>
-        <form>
-          <mat-form-field>
-            <input matInput placeholder="Enter Name">
-          </mat-form-field>
-          <mat-form-field>
-            <input matInput placeholder="Enter Position">
-          </mat-form-field>
-          <button color="primary" mat-raised-button>Save</button>
-        </form>
+        <mat-form-field>
+          <input matInput placeholder="Enter Name" name="name" [(ngModel)]="model.name">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Enter Position" name="position" [(ngModel)]="model.position">
+        </mat-form-field>
+        <button color="primary" mat-raised-button (click)="addEmployee()">Save</button>
       </mat-card>
     </div>
 
@@ -46,15 +44,13 @@
     <div class="create-container">
       <h4>Update</h4>
       <mat-card>
-        <form>
-          <mat-form-field>
-            <input matInput placeholder="Enter Name">
-          </mat-form-field>
-          <mat-form-field>
-            <input matInput placeholder="Enter Position">
-          </mat-form-field>
-          <button color="primary" mat-raised-button>Update</button>
-        </form>
+        <mat-form-field>
+          <input matInput placeholder="Enter Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Enter Position">
+        </mat-form-field>
+        <button color="primary" mat-raised-button>Update</button>
       </mat-card>
     </div>
   </div>
